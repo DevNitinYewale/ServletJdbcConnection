@@ -1,7 +1,6 @@
 package com.jdbc.servlet;
 
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -55,7 +54,7 @@ public class JdbcServlet extends HttpServlet {
 				String name = rs.getString(2);
 				/*out.println("ID: " + id + "  ");
 				out.println("Name: " + name + "<br>");*/
-				out.println("<tr> <td>"+id+"</td><td>"+name+"</td>");
+				out.println("<tr> <td>"+id+"</td><td>"+name+"</td></tr>");
 			}
 			
 		} catch (Exception e) {
@@ -74,6 +73,7 @@ public class JdbcServlet extends HttpServlet {
 		}
 		out.println("</table>");
 		out.println("</body></html>");
+		System.out.println("data printed");
 	}
 
 }

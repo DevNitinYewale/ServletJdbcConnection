@@ -19,4 +19,14 @@
     <servlet-name>JdbcServlet</servlet-name>
     <url-pattern>/JdbcServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Database.java</display-name>
+    <servlet-name>Database.java</servlet-name>
+    <servlet-class>com.jdbc.servlet.Database</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Database.java</servlet-name>
+    <url-pattern>/Database.java</url-pattern>
+  </servlet-mapping>
 </web-app>
